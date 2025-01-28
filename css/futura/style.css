@@ -1,0 +1,140 @@
+/* General*/
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+  line-height: 1.6;
+}
+
+/*Header*/
+header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+  max-width: 150px; /*dimensione max del logo*/
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 3rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 800px;
+  background: url('/img/calvino-scrivania.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9; /*effetto trasparenza*/
+}
+
+#cento {
+font-size: 20em;
+}
+
+#citazione {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /*overlay*/
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2; /*sposta testo sopra l'overlay*/
+}
+
+.hero-text h1 {
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/*contenuto principale*/
+main .content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.content-item {
+  display: flex;
+  margin-bottom: 40px;
+}
+.content-item .text {
+  flex: 1;
+}
+.content-item h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.content-item .image {
+  flex: 1;
+  text-align: center;
+}
+.content-item .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*Footer*/
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 5px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .content-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
