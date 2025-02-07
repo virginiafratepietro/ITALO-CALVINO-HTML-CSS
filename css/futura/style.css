@@ -64,6 +64,8 @@ font-size: 20em;
   font-style: italic;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 100px;
+  border-left: 3px solid #4B4B4B;
 }
 
 .hero::after {
@@ -90,20 +92,25 @@ font-size: 20em;
 .hero-text p {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /*contenuto principale*/
 main .content {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 0 30px;
+  border-left: 2px solid #4B4B4B;
+
 }
 .content-item {
   display: flex;
   margin-bottom: 40px;
 }
+
 .content-item .text {
   flex: 1;
+
 }
 .content-item h2 {
   font-size: 25px;
@@ -112,6 +119,7 @@ main .content {
 .content-item .image {
   flex: 1;
   text-align: center;
+  margin-left: 100px;
 }
 .content-item .image img {
   max-width: 100%;
